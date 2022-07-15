@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Mukta:wght@200;300;400;500;600;700;800&family=Permanent+Marker&family=Roboto+Mono:wght@100&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/695cdb8cea.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="src/styles.css" />
+    
+
+  
+    
+  </head>
+
+  
+
+  <body>
+    <div class="container">
+    
+      <h1>Weather forecast</h1>
+
+      <div class="card" style="width: 30rem">
+       
+      
+        <div class="card-body card">
+         
+        
+          <h5 class="card-title title" id="city">Berlin</h5>
+          <i class="fa-solid fa-cloud-rain rain-icon"></i>
+          <h6 class="card-subtitle mb-2 text-muted subtitle">light rain</h6>
+          <br />
+          <p class="card-text text" id= "temperature">max temp 18°</p>
+
+          <footer id ="date"></footer> 
+          <br />
+          <div class="card-footer text-muted note">
+            note: don't forget your umbrella ☂️
+          </div>
+        </div>
+      </div>
+    
+    <form class="row g-3 search-form search-form" id="search-form">
+      <div class="col-auto"></div>
+      <div class="col-auto">
+        <input
+          text="city" 
+          id="city-input"
+          class="form-control type-city"
+          placeholder="enter your current location"
+          autofocus="on"
+        
+          
+        />
+      </div>
+      <div class="col-auto">
+        <button type="search" class="btn btn-primary mb-3 search-button">
+          search
+        </button>
+      </div>
+    </form>
+
+    <p class="forecast">next 5 days:</p>
+    <ul class="list-group list-group-horizontal list-days ">
+  <li class="list-group-item column">saturday <br/>20° ☀️ <br/>sunny</li>
+  <li class="list-group-item column">sunday <br/>19° ☁️ <br/>cloudy</li>
+  <li class="list-group-item column">monday <br/>25° 🌧 <br/>light rain</li>
+  <li class="list-group-item column">tuesday <br/>15° ⛅️  <br/>partly cloudy</li>
+  <li class="list-group-item column">wedensday <br/>20° ☀️ <br/>sunny</li>
+  
+</ul>
+</div>
+
+
+   
+<footer class="signature">
+  coded by Ulrike Brandler
+</footer>
+<br/>
+
+
+   </div>
+    </div>
+  </body>
+  <script src="src/script.js"></script>
+</html>
+
